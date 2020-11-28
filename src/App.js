@@ -1,10 +1,10 @@
 import './App.css';
-import List from './components/List'
+import ContainerList from './components/ContainerList'
 
 function App() {
   return (
     <div className="App">
-      <List />
+      <ContainerList />
     </div>
   );
 }
