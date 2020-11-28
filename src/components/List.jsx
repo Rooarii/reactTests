@@ -28,7 +28,7 @@ const List = () => {
   // componentDidMount
   useEffect(()=>{
     getAnime();
-  },[month]);
+  },[]);
 
   // // componentDidUpdate
   // useEffect(()=>{
@@ -48,7 +48,7 @@ const List = () => {
         <option value="Select a month">Select a month</option>
         {months
           .map((month)=>
-            <option  value={month}>{month}</option>
+            <option key={month} value={month}>{month}</option>
           )
         }
       </select>
